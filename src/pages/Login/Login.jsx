@@ -28,7 +28,7 @@ const Login = () => {
             </p>
             <div className="signupdetails">
               <input type="email" placeholder="Email address" />
-              <Link to={"/"}><button >
+              <Link to={"/home"}><button >
                 Get Started
               </button></Link>
             </div>
@@ -43,7 +43,7 @@ const Login = () => {
                 required
               />
               <input type="password" placeholder="Password" required />
-              <Link to={"/"}>
+              <Link to={"/home"}>
                 <button>{signState}</button>
               </Link>
               <span>OR</span>
