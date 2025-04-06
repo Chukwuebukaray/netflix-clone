@@ -1,0 +1,15 @@
+.footer-icons{
+    display: flex;
+    gap: 10px;
+    margin: 40px 0;
+}
+
+.footer-icons img{
+    width: 30px;
+    cursor: pointer;
+}
+
+.copyright{
+    color: gray;
+    font-size: 14px;
+}

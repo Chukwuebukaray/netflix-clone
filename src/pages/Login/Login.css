@@ -1,0 +1,267 @@
+.login{
+    height: 120vh;
+    background-image: linear-gradient(#0000007e, #0000007e), url(/login_banner.jpg);
+    background-size: cover;
+    padding: 20px 12%;
+}
+
+.signup{
+    height: 100vh;
+    background: radial-gradient(50% 100% at 50% 0%, rgba(44, 66, 156, 0.15) 0%, rgba(0, 0, 0, 0) 100%), linear-gradient(180deg, rgba(0, 0, 0, 0.602) 0%, #00000000 100%), #1b0000;
+    background-size: cover;
+    background-position: center;
+    padding: 20px 3%;
+}
+
+.signupnav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.signinbutton{
+    font-size: 0.875rem;
+    font-weight: 600;
+    min-height: 2rem;
+    padding: 0.25rem 1rem;
+    border-radius: 100px;
+    background: #ffffff;
+    color: #000000;
+    border: 0;
+    margin-right: 15px;
+    cursor: pointer;
+
+    &:hover{
+        background: #bbb;
+        transition: all 0.5s ease;
+    }
+}
+
+.loginlogo{
+    width: 150px;
+    margin-left: 8px;
+}
+
+.loginform{
+    width: 100%;
+    max-width: 450px;
+    background: #000000bf;
+    margin: auto;
+    border-radius: 4px;
+    padding: 60px;
+    z-index: 1;
+}
+
+.loginform h1{
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.loginform input{
+    width: 100%;
+    height: 50px;
+    background: #4b5f8166;
+    color: #fff;
+    margin: 10px 0;
+    padding: 16px 20px;
+    border: 0.5px solid gray;
+    outline: 0;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-weight: 500;
+
+    &::placeholder{
+        font-size: 1rem;
+        font-weight: 500;
+    }
+
+    &:focus{
+    outline: 2px solid white;
+}
+}
+
+.loginform button{
+    width: 100%;
+    padding: 12px;
+    outline: 0;
+    border: 0;
+    background: #e50914;
+    color: #fff;
+    border-radius: 4px;
+    margin: 8px 0;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+
+    &:hover{
+        background: #b9121b;
+    }
+}
+
+.loginform form span{
+    display: flex;
+    justify-content: center;
+}
+
+.loginform .codebtn{
+    background: #80808066;
+
+    &:hover {
+        background: #62616166;
+    }
+}
+
+.loginform .forgotpassword{
+    text-decoration: underline;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.loginform .remember{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 10px 0;
+}
+
+.loginform .remember input{
+    width: 18px;
+    height: 18px;
+    accent-color: white;
+    border-radius: 4px;
+    outline: none;
+    cursor: pointer;
+}
+
+.loginform p{
+    font-size: 15px;
+    font-weight: 300;
+    margin: 10px 0;
+}
+
+.formswitch{
+    color: #bbb;
+}
+
+.formswitch span{
+    font-weight: 600;
+    color: #fff;
+
+    &:hover{
+        cursor: pointer;
+        text-decoration: underline;
+    }
+}
+
+.loginform .captcha{
+    font-size: 12px;
+    color: #bbb;
+}
+
+.loginform a{
+    color: #448ef4;
+}
+
+.loginfooter{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background: #161616;
+    margin: auto;
+    max-width: none;
+    padding: 80px 12%;
+    border-top: 1px solid #232323;
+    color: #ccc;
+}
+
+.loginfooter p{
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.loginfooter li{
+    font-size: 13px;
+    font-weight: 300;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.signupform{
+    width: 100%;
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.7) 20%, rgba(0, 0, 0, 0.9) 70%, rgba(50, 50, 50, 0.9) 100%), url('/login_banner.jpg');
+    background-size: cover;
+    background-position: center;
+    margin: auto;
+    margin-top: 15px;
+    padding: 14% 21% 6% 21%;
+    text-align: center;
+    /* box-shadow: 12px 16px 12px rgba(0, 0, 0, 0.6); */
+    box-shadow: 0px 12px 90px 40px #392121;
+    border-radius: 20px;
+    border: 1.5px solid #494949;
+}
+
+.signupform h1 {
+    font-size: 3rem;
+    font-weight: 900;
+    line-height: 125%;
+    width: 100%;
+    max-width: 700px;
+}
+
+.signupform h4{
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin: 1.5rem 0;
+}
+
+.signupform p{
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+.signupform .signupdetails{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding-top: 1rem;
+    gap: 8px;
+}
+
+.signupdetails button{
+    font-size: 1.5rem;
+    font-weight: 500;
+    padding: 0.75rem 2rem;
+    border-radius: 100px;
+    background: rgb(229, 9, 20);
+    color: #ffffff;
+    border: 0px;
+    cursor: pointer;
+    min-height: 3.5rem;
+    flex-basis: 30%;
+}
+
+.signupform input{
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.5;
+    padding: 1rem 1rem 1rem;
+    background: rgba(118, 118, 118, 0.7);
+    background-clip: padding-box;
+    border: 1px solid grey;
+    border-radius: 100px;
+    color: rgb(255, 255, 255);
+    flex-basis: 50%;
+
+    &::placeholder{
+        color: #fff;
+        font-size: 15px;
+    }
+}
+
+.hidden{
+    display: none;
+}
