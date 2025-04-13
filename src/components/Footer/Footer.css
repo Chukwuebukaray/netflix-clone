@@ -13,3 +13,10 @@
     color: gray;
     font-size: 14px;
 }
+
+@media (max-width: 800px) {
+    .footer-icons img{
+        width: 25px;
+    }
+
+}

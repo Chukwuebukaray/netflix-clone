@@ -5,7 +5,6 @@
 .banner{
     width: 100%;
     mask-image: linear-gradient(to right, transparent, #000000 75%);
-    
 }
 
 .herocaption{
@@ -22,7 +21,7 @@
 }
 
 .herocaption .herotext{
-    width: 700px;
+    max-width: 700px;
     font-size: 17px;
     margin-bottom: 20px;
 }
@@ -66,4 +65,56 @@
 
 .more-cards{
     padding-left: 6%;
+}
+
+@media (max-width: 1024px) {
+    .herocaption .title-cards{
+        display: none;
+    }
+
+    .herobtns{
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 800px){
+    .herocaption{
+        padding-left: 4%;
+    }
+
+    .captionimg{
+        margin-bottom: 10px;
+        width: 40%;
+    }
+
+    .herocaption .herotext{
+        font-size: 12px;
+        margin-bottom: 10px;
+    }
+
+    .herobtns .btn img{
+        width: 20px;
+    }
+
+    .more-cards{
+        padding-left: 4%;
+    }
+}
+
+@media (max-width: 500px){
+    .herotext{
+        display: none;
+    }
+
+    .herobtns .btn{
+        padding: 4px 10px;
+        gap: 5px;
+        font-size: 10px;
+    }
+
+    .herobtns .btn img{
+        width: 15px;
+        gap: 5px;
+        font-size: 10px;
+    }
 }

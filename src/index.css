@@ -25,3 +25,16 @@ body{
   margin-bottom: 30px;
   list-style: none;
 }
+
+@media (max-width: 800px) {
+  .footer ul{
+    gap: 8px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 650px) {
+  .footer ul{
+    grid-template-columns: auto auto;
+  }
+}

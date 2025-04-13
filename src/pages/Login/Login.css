@@ -2,7 +2,10 @@
     height: 120vh;
     background-image: linear-gradient(#0000007e, #0000007e), url(/login_banner.jpg);
     background-size: cover;
+    background-position: center;
     padding: 20px 12%;
+    display: flex;
+    flex-direction: column;
 }
 
 .signup{
@@ -46,6 +49,7 @@
     width: 100%;
     max-width: 450px;
     background: #000000bf;
+    place-self: center;
     margin: auto;
     border-radius: 4px;
     padding: 60px;
@@ -196,35 +200,33 @@
     margin-top: 15px;
     padding: 14% 21% 6% 21%;
     text-align: center;
-    /* box-shadow: 12px 16px 12px rgba(0, 0, 0, 0.6); */
     box-shadow: 0px 12px 90px 40px #392121;
     border-radius: 20px;
     border: 1.5px solid #494949;
+
+    & h1 {
+        font-size: 3rem;
+        font-weight: 900;
+        line-height: 125%;
+        width: 100%;
+        max-width: 700px;
+    }
+
+    & h4{
+        font-size: 1.5rem;
+        font-weight: 400;
+        margin: 1.5rem 0;
 }
 
-.signupform h1 {
-    font-size: 3rem;
-    font-weight: 900;
-    line-height: 125%;
-    width: 100%;
-    max-width: 700px;
-}
-
-.signupform h4{
-    font-size: 1.5rem;
-    font-weight: 400;
-    margin: 1.5rem 0;
-}
-
-.signupform p{
-    font-size: 15px;
-    font-weight: 400;
-    line-height: 1.5;
+    & p{
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 1.5;
+    }
 }
 
 .signupform .signupdetails{
     display: flex;
-    align-items: center;
     justify-content: center;
     width: 100%;
     padding-top: 1rem;
@@ -236,7 +238,7 @@
     font-weight: 500;
     padding: 0.75rem 2rem;
     border-radius: 100px;
-    background: rgb(229, 9, 20);
+    background: #e50914;
     color: #ffffff;
     border: 0px;
     cursor: pointer;
@@ -249,11 +251,11 @@
     font-weight: 500;
     line-height: 1.5;
     padding: 1rem 1rem 1rem;
-    background: rgba(118, 118, 118, 0.7);
+    background: #767676b3;
     background-clip: padding-box;
     border: 1px solid grey;
     border-radius: 100px;
-    color: rgb(255, 255, 255);
+    color: #ffffff;
     flex-basis: 50%;
 
     &::placeholder{
@@ -264,4 +266,95 @@
 
 .hidden{
     display: none;
+}
+
+@media (max-width: 1024px) {
+    .login{
+        height: 100vh;
+    }
+
+    .signup {
+        height: 100%;
+    }
+
+    .signupform h1{
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 825px){
+    .signupform h1{
+        font-size: 1.8rem;
+        max-width: none;
+    }
+
+    .signupdetails button{
+        font-size: 12px;
+        padding: 0.75rem 3rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .login{
+        height: 100%;
+        background: #000;
+        padding: 20px 4%;
+    }
+
+    .loginform{
+        padding: 0;
+        margin: 0;
+        margin-top: 10%;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 20%;
+    }
+
+    .loginlogo{
+        width: 100px;
+    }
+
+    .loginfooter{
+        padding: 40px 5%;
+        margin-top: 20%;
+
+        & ul{
+            gap: 20px;
+        }
+    }
+
+    .signupform .signupdetails{
+        flex-direction: column;
+        gap: 10px;        
+        
+        & input{
+            width: 100%;
+            place-self: center;
+        }
+        
+        & button{
+            width: 100%;
+        }
+    }
+    
+    .signupform{
+        width: 95%;
+        padding: 34% 2% 6% 2%;
+        
+        & h1{
+            font-size: 22px;
+            font-weight: 700;
+            line-height: 120%;
+            padding: 0 12%;
+        }
+        
+        & h4 {
+            font-size: 1rem;
+            margin-top: 10px;
+        }
+
+        & p{
+            font-size: 13px;
+        }
+    }
 }

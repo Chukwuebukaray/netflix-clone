@@ -30,7 +30,8 @@ const Home = () => {
               More Info
             </button>
           </div>
-          <TitleCards title={"Popular on Netflix"} category={"popular"}/>
+          <div className="title-cards">
+          <TitleCards title={"Popular on Netflix"} category={"popular"}/></div>
         </div>
       </div>
       <div className="more-cards">

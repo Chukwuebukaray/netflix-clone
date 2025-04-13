@@ -79,3 +79,32 @@
     background: #141414aa;
     transition: background-color 1s ease;
 }
+
+
+@media (max-width: 800px) {
+    .navigation{
+        padding: 20px 4%;
+    }
+
+    .leftnav ul{
+        display: none;
+    }
+
+    .navigation img{
+        height: 25px;
+    }
+}
+
+@media (max-width: 500px) {
+    .navigation img{
+        height: 20px;
+    }
+
+    .rightnav{
+        gap: 10px;
+    }
+
+    .rightnav .profile{
+        width: 30px;
+    }
+}
